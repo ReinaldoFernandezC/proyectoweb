@@ -333,6 +333,13 @@ height: 100;}
     .link:hover{
         color: cadetblue;
     }
+    
+    .form_input--message{height: 80%;
+        resize: auto;
+        padding: 1.8em 1em;
+        margin-bottom: .5em;
+    }
+    
     @media(min-width:768px)
     {
         .formulario{
