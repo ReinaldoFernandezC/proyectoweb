@@ -1,5 +1,6 @@
 *{margin: 0;
 padding: 0;}
+body{margin: 0;}
 .img{float: right;}
 #rojito{text-align: center;
     color :red;}
@@ -33,34 +34,27 @@ height: 70px;}
     
 }
 
-#icono{width: 100px;
-    height: 100px;}
+.titulo{color: #ebece6b7;}
 .red-text{color: #7e6099}
 .centro{text-align: center;
 align-items: center;
 align-content: center;
 align-self: center;}
 
-header{height: 100%;
+header{display: flex;
+    min-height: 70px;
+    justify-content: space-between;
 background-color: #7e6099;
-height: 70px;}
-.ancho{width: 80%;
-height: 70px;
-background-color: #7e6099;
-margin: auto;}
-.logo{width: 30%;
-height: 70px;
-background-color: #7e6099;
-float: left;
-padding-top: 10px;
-box-sizing: border-box;}
-.logo p a{
-    color: #ebece6b7;
-    font-size: 40px;
-    text-decoration: none;
-    font-weight: bold;
- 
+align-items: center;
+padding: 10px;}
+.logo{display: flex;
+align-items: center;}
+.logo img{
+height: 50px;
+margin-right: 10px; 
 }
+a{text-decoration: none;
+  color: #ebece6b7;}
 nav{width: 50%;
 height: 70px;
 background-color: #7e6099;
@@ -68,24 +62,6 @@ float: left;
 text-align: right;
 padding-top: 24px;
 box-sizing: border-box;}
-nav ul li { display: inline;
-}
-nav ul li a{color: #ebece6b7;
-font-size: 13px;
-text-decoration: none;
-text-transform: uppercase;
-padding-left: 15px;
-font-weight: bold;
-letter-spacing: 1px;}
-.icono{width: 20%;
-    height: 70px;
-    background-color: #7e6099;
-    float: left;
-    text-align: right;
-    padding-top: 24px;
-    box-sizing: border-box;
-float: inline-start;}
-
 .icono img{width: 16%;
 height: 30px;
 color: #ebece6b7;
@@ -93,6 +69,10 @@ font-size: 40px;
 text-decoration: none;
 font-weight: bold;
 }
+nav a{font-weight: 600;
+padding-right: 15px;}
+nav a:hover{color:rgb(0, 0, 0)}
+
 .mascota img{width: 100%;
     height: 250px;
     color: #ebece6b7;
@@ -270,82 +250,19 @@ height: 100px;}
 .poli{background-color: #7e6099;
 width: 600;
 height: 100;}
-@media screen and(max-width: 800px){
-    .col1{
-    width: 90%;
-     height: 30px;
-    grid-template-columns: repeat(1,1fr);
-    grid-gap: 30px;}}
+.redes-sociales{display: flex;
+justify-content: center;
+}
+.redes-sociales i{font-size: 30px;
+padding: 30px;}
+.contenedorf{background-color: #7e6099;}
+.copi {color: #ebece6b7;
+justify-content: center;
+display: flex;}
+@media (max-width:700px){
+    header{flex-direction: column;
+        text-align: center;
+    }
+    nav{padding: 10px 0px;}}
 
-    
-    /* css registro y login  */
-    .contenedor{
-        width: 100%;
-        padding: 15;
-    }
-    .formulario{
-        background: #fff;
-        margin-top: 150px;
-        padding: 3px;
-    }
-    h1{
-        text-align: center;
-        color: #1a2537;
-        font-size: 40px;
-    }
-    input[type="text"],
-    input[type="password"]{
-        font-size: 82%;
-        width: 82%;
-        padding: 10px;
-        border: none;
-    }
-    .input-contenedor{
-        margin-bottom: 15px;
-        border: 1px solid #aaa;
-    }
-    .icon{
-        min-width: 50px;
-        text-align: center;
-        color: #999;
-    }
-    .button{
-        border: none;
-        width: 100%;
-        color: white;
-        font-size: 20px;
-        background: #1a2537;
-        padding: 15px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    .button:hover{
-        background: cadetblue;
-    }
-    p{
-        text-align: center;
-    }
-    .link{
-        text-decoration: none;
-            color: #1a2537;;
-        font-weight: 600;
-    }
-    .link:hover{
-        color: cadetblue;
-    }
-    
-    .form_input--message{height: 80%;
-        resize: auto;
-        padding: 1.8em 1em;
-        margin-bottom: .5em;
-    }
-    
-    @media(min-width:768px)
-    {
-        .formulario{
-            margin: auto;
-            width: 500px;
-            margin-top: 150px;
-            border-radius: 2%;
-        }
-    }
+
