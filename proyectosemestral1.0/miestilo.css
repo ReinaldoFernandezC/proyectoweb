@@ -1,10 +1,11 @@
 *{margin: 0;
 padding: 0;}
 body{margin: 0;}
-.img{float: right;}
 #rojito{text-align: center;
     color :red;}
 #colorp{background-color: #ebece6b7;}
+.colorm{color: #7e6099;}
+.bg-colorm{background-color: #7e6099;}
 .tamano{width: 70%;
 height: 70px;}
 #tamano{width: 100%;
@@ -12,10 +13,11 @@ height: 70px;}
         align-items: center;
        }
 #item{align-items: center;}
-#black{color: black;}
+.black{color: black;}
 
 .carousel-item{    height: 500px;
     width: 100%;
+    align-items: center;
     align-items: center;}
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -40,25 +42,37 @@ height: 70px;}
 align-items: center;
 align-content: center;
 align-self: center;}
-
-header{display: flex;
-    min-height: 70px;
+.nav-menu{display: flex;
+    margin-right: 40px;
+    list-style: none;}
+.nav-link{text-decoration: none;
+color: #ebece6b7;}
+.nav-item{font-size: 15px;
+line-height: 60px;
+width: max-content;
+text-transform: uppercase;}
+.header{display: flex;
     justify-content: space-between;
 background-color: #7e6099;
 align-items: center;
 padding: 10px;}
 .logo{display: flex;
-align-items: center;}
+float: inline-start;}
 .logo img{
-height: 50px;
-margin-right: 10px; 
+height: 30px;
+float: inline-start; 
 }
 a{text-decoration: none;
   color: #ebece6b7;}
-nav{width: 50%;
+header:hover{color:rgb(0, 0, 0)}
+ul li a:hover{color:rgb(0, 0, 0)}
+.nav-link:hover{color:rgb(0, 0, 0)}
+.nav-link{font-weight: 600;
+          padding: auto;}
+.nav{width: 50%;
 height: 70px;
 background-color: #7e6099;
-float: left;
+
 text-align: right;
 padding-top: 24px;
 box-sizing: border-box;}
@@ -259,10 +273,23 @@ padding: 30px;}
 .copi {color: #ebece6b7;
 justify-content: center;
 display: flex;}
-@media (max-width:700px){
+.navbar-toggler{display: block;}
+@media (max-width:990px){
     header{flex-direction: column;
         text-align: center;
     }
-    nav{padding: 10px 0px;}}
-
+    nav{padding: 10px 0px;}
+    .nav-menu{flex-direction: column;
+        margin-right: 20px;
+        list-style: none;
+        width: 100%;
+        align-items: center;}
+    .nav-item{font-size: 15px;
+        line-height: 60px;
+        width: max-content;
+        text-align: center;}}
+    .carousel-item{    height: 400px;
+            width: 100%;
+            align-items: center;
+            align-items: center;}
 

@@ -13,19 +13,41 @@
    <link type="text/css"  rel="stylesheet"  href="flexboxgrid.scss" >
    <script src="https://kit.fontawesome.com/db48863967.js" crossorigin="anonymous"></script>
 </head>
-<header>
-    <div class="logo">
-      <img src="img\huella.jpg"></a>
-      <h2 class="index.html">Patitas Yorkie</h2>
+<header >
+  <div class="navbar navbar-expand-lg navbar-dark bg-colorm ">
+    <div class="container">
+      <a href="index.html" class="navbar-brand ">
+        <img src="img\huella.jpg" width="30" height="30" >
+        <strong class="colorp">Patitas Yorkie</strong>
+      </a> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarHeader">
+        <ul class="nabvar-nav me-auto mb-2 mb-lg-0 nav-menu">
+          <li class="nav-item ">
+            <a href="index.html" class="nav-link">Inicio</a>  
+          </li>
+          <li class="nav-item">
+            <a href="productos.html" class="nav-link">Productos</a>  
+          </li>
+          <li class="nav-item">
+            <a href="ayudanos.html" class="nav-link">Ayúdanos</a>  
+          </li>
+          <li class="nav-item">
+            <a href="contactanos.html" class="nav-link">Contacto</a>  
+          </li>
+          <li class="nav-item">
+            <a href="registro.html" class="nav-link">Registrarse</a>  
+          </li>
+          <li class="nav-item">
+            <a href="loginvista.html" class="nav-link">Iniciar Sesión</a>  
+          </li>
+        </ul>
+      </div>
+
     </div>
-      <nav>
-          <a href="index.html">Inicio</a>
-          <a href="perrogato.html">Productos</a>
-          <a href="ayudanos.html">Ayúdanos</a>
-          <a href="contactanos.html">Contacto</a>
-          <a href="registro.html">Registrate</a>
-          <a href="loginvista.html">Iniciar Sesión</a>       
-      </nav>
+  </div>
 </header>
 <body id="colorp">
  <p>  
@@ -33,6 +55,7 @@
     <h3 class="red-text ayuda centro"> Productos para tus mascotas </h3>    
 </p>
 <p>
+  
   <div id="carouselExampleIndicators" class="carousel slide m-4 middle-sm-4 middle-xs-4" data-bs-ride="carousel" >
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -41,27 +64,19 @@
     </div>
         <div class="carousel-inner row">
           <div class="carousel-item active col-xs-12" data-bs-interval="10000">
-            <a href="perrogato.html">
-            <img src="img\perrogato.jpg" class="d-md-block " id="tamano"></a>
+            <a href="productos.html">
+            <img src="img\productos.jpg" class="d-md-block " id="tamano"></a>
             <div class="carousel-caption d-none d-md-block">
-              <h3 id="black">Seccion de animales</h3>
-              <h6 id="black"> todos los animales.</h6>
+              <h3 class="black">Productos para tus mascotas</h3>
+              <h6 id="black"> </h6>
             </div>
           </div>
           <div class="carousel-item col-md-4" data-bs-interval="2000" id="">
-            <a href="ofertas.html">
-            <img src="img\ofertas.jpg" class="d-block " id="tamano"></a>
+            <a href="ayudanos.html">
+            <img src="img\donar.jpg" class="d-block " id="tamano"></a>
             <div class="carousel-caption d-none d-md-block" >
-              <h3  id="black">Seccion de gatos</h3>
-              <h6 id="black"> todos los gatos.</h6>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <a href="perro.html">
-            <img src="img\perrosuper.jpg" class="d-block" id="tamano"></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h3 id="black">Seccion de perros</h3>
-              <h6 id="black"> todos los perros.</h6>
+              <h3  id="black">Ayuda a la fundacion con una donacion</h3>
+              <h6 id="black"> </h6>
             </div>
           </div>
         </div>
@@ -84,8 +99,9 @@
                 <img src="img\mascota\perro2.jpg"  alt="perro numero 1" >
                 <h3>Mundo Perro</h3>
               </div>
+              <a href="productos.html">
               <div class="face back">
-               <h3>Aqui encontraras articulos para perros</h3>
+               <h3>Aqui encontraras articulos para perros</h3></a>
              </div>
            </div>        
           </div>
@@ -95,19 +111,24 @@
                 <img src="img\mascota\gato2.jpg"  alt="gato numero 1" >
                 <h3>Mundo Gato</h3>
               </div>
+              <a href="productos.html">
               <div class="face back">
-               <h3>Aqui encontraras articulos para gatos</h3>
+               <h3>Aqui encontraras articulos para gatos</h3></a>
              </div>
            </div>        
           </div>
           <div class="col-xs-10 col-sm-6 col-md-4 mascota">
             <div class="tarjeta">
               <div class="face front">
+               
                 <img src="img\mascota\vario.jpg"  alt="vario numero 1" >
+              
                 <h3>Mundo Vario</h3>
               </div>
+              <a href="productos.html">
               <div class="face back">
                <h3>Aqui encontraras articulos para todo tipo de animales</h3>
+              </a>
              </div>
            </div>        
           </div>
