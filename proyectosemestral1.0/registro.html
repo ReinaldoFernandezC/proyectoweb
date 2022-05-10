@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/e7d5be1b4c.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image" href="img\huella.jpg">
     <link rel="stylesheet"  href="registrologin.css" >
@@ -13,30 +15,42 @@
 </head>
 <body>
 
-    <form class="formulario" action="https://formspree.io/f/xbjwpvva"
+    <form class="formulario" id="formulario" action="https://formspree.io/f/xbjwpvva"
     method="POST">
 
         <h1>Registrate</h1>
             <div class="contenedor">
-
+                 <!--Nombre-->
                 <div class="input-contenedor">
                     <i class="fa-solid fa-user icon"></i>
                     <input type="text" placeholder="Nombre Completo">
                 </div>
-
+                <!--Correo Electronico--> 
                 <div class="input-contenedor">
                     <i class="fa-solid fa-envelope icon"></i>
                     <input type="text" placeholder="Correo Electronico" name="email">
                 </div>
-
+                <!--Contraseña-->
                 <div class="input-contenedor">
                     <i class="fa-solid fa-key icon"></i>
                     <input type="password" placeholder="Contraseña">
                 </div>
+                <!--Confirmar contraseña-->
                 <div class="input-contenedor">
                     <i class="fa-solid fa-key icon"></i>
                     <input type="password" placeholder="Confirmar Contraseña">
                 </div>
+                <!--Confirmar contraseña-->
+                <div class="input-contenedor">
+                    <i class="fa-solid fa-key icon"></i>
+                    <input type="password" placeholder="Confirmar Contraseña">
+                </div>
+                <!--Teléfono-->
+                <div class="input-contenedor">
+                    <i class="fa-solid fa-phone icon"></i>
+                    <input type="text" placeholder="Teléfono">
+                </div>
+
                 <a href="loginvista.html">
                     <input type="button" value="Registrate" class="button">
                 </a>
