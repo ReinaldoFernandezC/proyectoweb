@@ -16,7 +16,7 @@ height: 70px;}
 .black{color: black;}
 
 .carousel-item{    height: 500px;
-    width: 100%;
+    max-width: 100%;
     align-items: center;
     align-items: center;}
 
@@ -63,7 +63,8 @@ height: 30px;
 float: inline-start; 
 }
 a{text-decoration: none;
-  color: #ebece6b7;}
+  color: #00000000;}
+a:hover{color: black;}
 header:hover{color:rgb(0, 0, 0)}
 ul li a:hover{color:rgb(0, 0, 0)}
 .nav-link:hover{color:rgb(0, 0, 0)}
@@ -98,7 +99,7 @@ nav a:hover{color:rgb(0, 0, 0)}
     position: relative;
     width: 200;
     height: 250px;
-    background-color: #7e6099;
+    background-color: #cdcecab7;
     box-shadow: 0 0px 0px;
     margin: 20px;
     
@@ -126,7 +127,7 @@ nav a:hover{color:rgb(0, 0, 0)}
         background: rgba(0, 0, 0, 0.3);}
     .tarjeta .back{
         transform: perspective(600px) rotateY(180deg);
-        background: #7e6099;
+        background: #ebece6b7;
         padding: 15px;
         color:rgb(0, 0, 0);
         display: flex;
