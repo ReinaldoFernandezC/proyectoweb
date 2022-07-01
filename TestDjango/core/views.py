@@ -1,13 +1,12 @@
-from django.shortcuts import render
-from .models import Productos
-
+from django.shortcuts import redirect, render
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import logout
 # Create your views here.
+@login_required
 
-def home(request):
-    
-    producto= Productos.objects.all()
+def index(request):
+    return render(request, 'core/home.html')
 
-    datos = {
-        'Productos': producto
-    }
-    return render(request, 'core/home.html', datos)
+def salir(request):
+    logout(request)
+    return redirect('/')
